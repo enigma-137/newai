@@ -1,4 +1,4 @@
-import { Send } from "lucide-react";
+import { SendHorizontal } from "lucide-react";
 import { useState } from "react";
 
 
@@ -54,11 +54,11 @@ const App = () => {
       </div>
       {/* text area */}
       <textarea value={text} onKeyDown={handleKeyDown} onChange={e => setText(e.target.value)} placeholder="Ask me anything here"></textarea>
-      <button onClick={getResponse}> <Send className='send' /> </button>
+      <button onClick={getResponse}> <SendHorizontal className='send' /> </button>
     </div>
 
     <footer>
-      <p>© 2023 An AI Experiment <span role="img" aria-label="heart">❤️</span> by <a href="https://twitter.com/enigma137x" target="_blank" rel="noopener noreferrer">Enigma</a>
+      <p>© 2023 An Experimental AI <span role="img" aria-label="heart">❤️</span> by <a href="https://twitter.com/enigma137x" target="_blank" rel="noopener noreferrer">Enigma</a>
       </p>
     </footer>
     </div>
