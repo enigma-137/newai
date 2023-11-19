@@ -1,13 +1,135 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+padding: 0;
+background-color: rgb(227, 227, 227);
+justify-content: center;
+height: 100%;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2, h3{
+ margin: 5px; 
+
 }
+
+.container {
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  align-content: center ;
+  top: 0;
+}
+
+.chat-bot{
+  position: relative;
+ height: 800px;
+ width: 400px;
+ margin: 20px 20px 20px 20px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px, rgba(0, 0, 0, 0.06) 0 0 0 1px;
+ overflow: hidden;
+ background-color: #e5e5f7;
+ opacity: 0.8;
+ background-image:  radial-gradient(#d877fa 0.5px, transparent 0.5px), radial-gradient(#d877fa 0.5px, #e5e5f7 0.5px);
+ background-size: 20px 20px;
+ background-position: 0 0,10px 10px;
+
+
+}
+
+.info-container {
+  height: 100%;
+  background: linear-gradient(rgb(131, 19, 141), rgb(90, 45, 127) );
+ padding: 25px; 
+ color: rgb(244, 244, 244);
+}
+
+textarea {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 70px 25px 25px ;
+  border-top: 1px solid rgb(207, 207, 207);
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+
+ 
+}
+textarea:focus {
+  outline: none;
+ 
+}
+button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  color: rgb(207, 207, 207);
+  position: absolute;
+  bottom: 21px;
+  right: 21px;
+  border: none;
+}
+
+.bubble {
+  width: 250px;
+  padding: 20px;
+  margin: 10px 25px;
+  border-radius: 10px; 
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  color: white;
+  background-color: white;
+}
+
+.question {
+  background-color: black;
+  margin-left: 85px;
+
+}
+
+.response {
+
+  color: rgb(72, 69, 69);
+}
+.chat-header {
+  position: relative;
+  z-index: 1;
+}
+
+.feed {
+  position: absolute;
+  bottom: 82px;
+  width: 100%;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  padding-top:0px;
+  margin-top: 30px;
+}
+
+a {
+  color: #9900ff; /* Link color */
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
