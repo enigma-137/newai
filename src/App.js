@@ -29,7 +29,6 @@ const App = () => {
     setText('')
   }
   
-  console.log(text)
   return (
     <div className="container">
 
@@ -38,7 +37,7 @@ const App = () => {
       <div className="chat-header">
         <div className="info-container">
           <img src={bot} alt="bot"/>
-          <h2>Enigma AI</h2>
+          <h2>Enigma</h2>
         </div>
 
       </div>

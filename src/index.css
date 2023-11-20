@@ -6,6 +6,7 @@ justify-content: center;
 height: 100%;
 align-items: center;
 font-family: Arial, Helvetica, sans-serif;
+overflow: hidden;
 }
 
 h2, h3{
@@ -102,7 +103,8 @@ button {
 
 .response {
 
-  color: rgb(72, 69, 69);
+  color: black;
+  background-color: white;
 }
 .chat-header {
   position: relative;
@@ -115,6 +117,20 @@ button {
   width: 100%;
   height: 700px;
   overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.feed::-webkit-scrollbar {
+  width: 6px;
+}
+
+.feed::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.feed::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 footer {
