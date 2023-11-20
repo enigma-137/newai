@@ -14,7 +14,6 @@ h2, h3{
 }
 
 .container {
-  padding: 1%;
   display: flex;
   justify-content: center;
   align-content: center ;
@@ -25,7 +24,7 @@ h2, h3{
   position: relative;
  height: 800px;
  width: 400px;
- margin: 20px 20px 20px 20px;
+ margin: 0px 0px 20px 0px;
  box-shadow: rgba(0, 0, 0, 0.16) 0 10px 36px, rgba(0, 0, 0, 0.06) 0 0 0 1px;
  overflow: hidden;
  background-color: #e5e5f7;
@@ -39,40 +38,47 @@ h2, h3{
 
 .info-container {
   height: 100%;
-  background: linear-gradient(rgb(131, 19, 141), rgb(90, 45, 127) );
+  background: linear-gradient(rgb(93, 7, 100), rgb(76, 10, 129) );
  padding: 25px; 
+ display: flex;
  color: rgb(244, 244, 244);
 }
 
-textarea {
+input {
   position: absolute;
   bottom: 0;
   left: 0;
   border: none;
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
   padding: 25px 70px 25px 25px ;
   border-top: 1px solid rgb(207, 207, 207);
-  height: 60px;
+  height: 40px;
   border-radius: 20px;
-  margin-bottom: 10px;
+  margin: 2%;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 0.5;
 
  
 }
-textarea:focus {
+input:focus {
   outline: none;
  
+}
+img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 button {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  background-color: blueviolet;
-  color: rgb(207, 207, 207);
+  background-color:  rgb(76, 10, 129);
+  color: white;
   position: absolute;
-  bottom: 21px;
+  bottom: 15px;
   right: 21px;
   border: none;
 }
@@ -85,6 +91,7 @@ button {
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   color: white;
   background-color: white;
+  font-weight: 300;
 }
 
 .question {
@@ -111,19 +118,18 @@ button {
 }
 
 footer {
-  background-color: #f4f4f4;
   text-align: center;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 30px;
   justify-content: center;
-  padding-top:0px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-bottom: 15px;
 }
 
 a {
-  color: #9900ff; /* Link color */
+  color:  rgb(76, 10, 129); /* Link color */
   text-decoration: none;
   font-weight: 400;
 }

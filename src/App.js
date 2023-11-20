@@ -1,5 +1,6 @@
 import { SendHorizontal } from "lucide-react";
 import { useState } from "react";
+import bot from "./images/bot.png"
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
     <div className="chat-bot">
       <div className="chat-header">
         <div className="info-container">
+          <img src={bot} alt="bot"/>
           <h2>Enigma AI</h2>
         </div>
 
@@ -53,7 +55,7 @@ const App = () => {
 
       </div>
       {/* text area */}
-      <textarea value={text} onKeyDown={handleKeyDown} onChange={e => setText(e.target.value)} placeholder="Ask me anything here"></textarea>
+      <input value={text} onKeyDown={handleKeyDown} onChange={e => setText(e.target.value)} placeholder="Ask me anything here" type="text"/>
       <button onClick={getResponse}> <SendHorizontal className='send' /> </button>
     </div>
 
